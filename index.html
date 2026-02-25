@@ -1050,7 +1050,7 @@
             
             try {
                 // 发送到Cloudflare Worker
-                const response = await fetch('newsfrom.yonglamlongway.workers.dev', {
+                const response = await fetch('https://newsfrom.yonglamlongway.workers.dev', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -1078,7 +1078,7 @@
                         
                         if (seconds <= 0) {
                             clearInterval(countdownInterval);
-                            window.location.href = 'https://goaoxor.com';
+                            window.location.href = 'https://www.goaoxor.com';
                         }
                     }, 1000);
                 } else {
